@@ -23,11 +23,11 @@ API_URL: string = ""; //on laisse vite mais on va implamenter OnInti pour qu'il 
 ngOnInit(): void {
     /** GESTION API */
     if (this.APP_ENV == "DEV") {
-      this.API_URL = "http://localhost:8080/api";
+      this.API_URL = "https://api.chucknorris.io/jokes/";
     }else if(this.APP_ENV == "PROD") {
-      this.API_URL = "http://localhost:8080/api";
+      this.API_URL = "https://api.chucknorris.io/jokes/random";
     }else{
-      this.API_URL = "http://localhost:8080/api";
+      this.API_URL = "https://api.chucknorris.io/jokes/random";
     }
 }
 
